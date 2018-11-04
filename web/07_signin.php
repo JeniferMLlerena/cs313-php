@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Hello world!</title>
+    <title></title>
   </head>
   <body>
-    <p>Hello World</p>
+
   </body>
 </html>

@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: "Oxygen", sans-serif;
+    letter-spacing: 0.0625em;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.header-nav {
+    border-bottom: 2px solid #e4e0e1;
+    color: #221e1f;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.header-nav-brand {
+    padding-top: 10px;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-nav-list li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.header-nav-list li a {
+    text-decoration: none;
+    color: #9900cc;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.header-nav-list li a:hover {
+    color: #0ca6d8;
+}
+
+.header-nav-toggle {
+    display: none;
+    background-color: #dfdfdf;
+    color: #660033;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#top-header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#top-header .large-logo {
+    width: 55vh;
+    height: 30vh;
+}
+
+#top-header img {
+    width: 6vh;
+    height: 5vh;
+}
+
+.small-logo {
+    margin: 2vh;
+}
+
+section img {
+    width: 100%;
+}
+
+#cars-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cars-section div {
+    width: 32%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2vh;
+}
+
+#cars-section p {
+    font-size: 2.7vh;
+}
+
+/*Small Screen*/
+@media screen and (max-width: 660px) {
+    #top-header .large-logo {
+        width: 30vh;
+        height: 15vh;
+    }
+
+    #top-header img {
+        width: 5vh;
+        height: 4vh;
+    }
+
+    #top-header {
+        font-size: 1.7vh;
+    }
+
+    .large-logo {
+        width: 40vh;
+        height 20vh;
+    }
+
+    .header-nav {
+        border-bottom: 0;
+    }
+
+    .header-nav-toggle {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .header-nav-list {
+        background-color: #dfdfdf;
+        display: block;
+        margin-top: 10px;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: all ease-in-out .3s;
+    }
+
+    .header-nav-list li {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header-nav-list li:hover {
+        background-color: #cfcfcf;
+    }
+
+    .header-nav-list li a {
+        margin: 20px auto;
+        font-size: 16px;
+    }
+
+    .open {
+        height: 290px;
+        /* change height based on the number of links */
+        max-height: 290px;
+        /* same here */
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #cars-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cars-section div {
+        width: 99%;
+        margin: 0 auto;
+        margin-bottom: 4vh;
+    }
+
+    #cars-section p {
+        font-size: 3vh;
+    }
+}

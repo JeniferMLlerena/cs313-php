@@ -1,0 +1,77 @@
+
+/*ASSIGNMENTS VIEW CSS*/
+
+body {
+  font-family: sans-serif;
+  background: #E9E9E9;
+}
+
+h1 {
+  text-align: center;
+  color: #4eb6b6;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+h2 {
+  margin-left: 16%;
+  font-size: 2em;
+  color: #333;
+  font-family: 'Caveat',coursive;
+  font-weight: 400;
+  border-bottom: 1px dotted #777;
+  max-width: 50%;
+  padding-bottom: 18px;
+}
+
+.custom-list {
+  counter-reset: new-counter;
+  margin-left: 16%;
+}
+
+.custom-list li {
+  color: #777;
+  position: relative;
+  padding-left: 20px;
+  line-height: 2em;
+  font-size: 28px;
+}
+
+.custom-list li:after {
+  content: counter(new-counter,decimal);
+  counter-increment: new-counter;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: -27px;
+  font-size: .7em;
+  font-weight: 800;
+  line-height: 2.8em;
+}
+
+.custom-list.style1 li {
+  line-height: 2em;
+  font-size: 28px;
+}
+.custom-list.style1 li:before {
+  position: absolute;
+  left: -40px;
+  color: #ccc;
+  font-size: 32px;
+  content: '';
+  width: 40px;
+  height: 50px;
+  z-index: 0;
+}
+
+.custom-list.style1 li:nth-child(odd):before {
+  -webkit-transform: translateY(3px) skewX(30deg);
+          transform: translateY(3px) skewX(30deg);
+  background: green;
+}
+
+.custom-list.style1 li:nth-child(even):before {
+  -webkit-transform: translateY(3px) skewX(-30deg);
+          transform: translateY(3px) skewX(-30deg);
+  background: #4eb6b6;
+}
